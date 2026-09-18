@@ -14,29 +14,130 @@
     <link
         rel="icon"
         type="image/png"
-        href="images/icons/favicon.png"
+        href="../images/icons/favicon.png"
     >
 
-    <link rel="stylesheet" href="css/style.css?v=2">
+
+    
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-header {
+        position: fixed;
+        top: 14px;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 16px 24px;
+        box-sizing: border-box;
+
+        z-index: 10;
+    }
+
+    .site-navigation {
+        display: flex;
+        gap: 16px;
+    }
+
+    .site-header a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .site-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .site-logo img {
+        width: 13px;
+        height: 13px;
+        display: block;
+    }
+
+.gallery-main {
+    padding: 100px 24px 50px;
+}
+
+.gallery-layout {
+    width: min(94vw, 1500px);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 28px;
+
+    align-items: start;
+}
+
+.gallery-filters {
+    position: sticky;
+    top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.gallery-filter {
+    padding: 0;
+    border: none;
+    background: none;
+
+    color: #222222;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+    border: 0;
+}
+
+</style>
+
+<link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body class="gallery-page">
     <header class="site-header">
 
-        <a class="site-logo" href="index.html">
-            <img src="images/icons/logo.png" alt="">
+        <a class="site-logo" href="../">
+            <img src="../images/icons/logo.png" alt="">
             <span>Tobias</span>
         </a>
 
-        <nav
-            class="site-navigation"
-            aria-label="Main navigation"
-        >
-            <a href="index.html">home</a>
-            <a href="gallery.html">gallery</a>
-            <a href="about.html">about me</a>
-            <a href="contact.html">contact</a>
-        </nav>
+<nav class="site-navigation" aria-label="Main navigation">
+    <a href="../">home</a>
+    <a href="../gallery/">gallery</a>
+    <a href="../about/">about me</a>
+    <a href="../contact/">contact</a>
+</nav>
 
     </header>
 
@@ -84,7 +185,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-1.jpg"
+                        src="../images/photos/gallery/gallery-1.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -95,7 +196,7 @@
                     data-tags="film black-and-white"
                 >
                     <img
-                        src="images/photos/gallery/gallery-2.jpg"
+                        src="../images/photos/gallery/gallery-2.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -106,7 +207,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-3.jpg"
+                        src="../images/photos/gallery/gallery-3.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -119,7 +220,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-4.jpg"
+                        src="../images/photos/gallery/gallery-4.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -130,7 +231,7 @@
                     data-tags="film black-and-white"
                 >
                     <img
-                        src="images/photos/gallery/gallery-5.jpg"
+                        src="../images/photos/gallery/gallery-5.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -141,7 +242,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-6.jpg"
+                        src="../images/photos/gallery/gallery-6.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -152,7 +253,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-7.jpg"
+                        src="../images/photos/gallery/gallery-7.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -163,7 +264,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-8.jpg"
+                        src="../images/photos/gallery/gallery-8.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -174,7 +275,7 @@
                     data-tags="coloure"
                 >
                     <img
-                        src="images/photos/gallery/gallery-9.jpg"
+                        src="../images/photos/gallery/gallery-9.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -185,7 +286,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-10.jpg"
+                        src="../images/photos/gallery/gallery-10.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -196,62 +297,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-11.jpg"
-                        alt="Photo"
-                        loading="lazy"
-                    >
-                </figure>
-                
-                <figure
-                    class="gallery-item"
-                    data-tags="film black-and-white"
-                >
-                    <img
-                        src="images/photos/gallery/gallery-12.jpg"
-                        alt="Photo"
-                        loading="lazy"
-                    >
-                </figure>
-                
-                <figure
-                    class="gallery-item"
-                    data-tags="colour"
-                >
-                    <img
-                        src="images/photos/gallery/gallery-13.jpg"
-                        alt="Photo"
-                        loading="lazy"
-                    >
-                </figure>
-                
-                <figure
-                    class="gallery-item"
-                    data-tags="colour"
-                >
-                    <img
-                        src="images/photos/gallery/gallery-14.jpg"
-                        alt="Photo"
-                        loading="lazy"
-                    >
-                </figure>
-                
-                <figure
-                    class="gallery-item"
-                    data-tags="colour"
-                >
-                    <img
-                        src="images/photos/gallery/gallery-15.jpg"
-                        alt="Photo"
-                        loading="lazy"
-                    >
-                </figure>
-                
-                <figure
-                    class="gallery-item"
-                    data-tags="colour"
-                >
-                    <img
-                        src="images/photos/gallery/gallery-16.jpg"
+                        src="../images/photos/gallery/gallery-11.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -262,7 +308,51 @@
                     data-tags="film black-and-white"
                 >
                     <img
-                        src="images/photos/gallery/gallery-17.jpg"
+                        src="../images/photos/gallery/gallery-12.jpg"
+                        alt="Photo"
+                        loading="lazy"
+                    >
+                </figure>
+                
+                <figure
+                    class="gallery-item"
+                    data-tags="colour"
+                >
+                    <img
+                        src="../images/photos/gallery/gallery-13.jpg"
+                        alt="Photo"
+                        loading="lazy"
+                    >
+                </figure>
+                
+                <figure
+                    class="gallery-item"
+                    data-tags="colour"
+                >
+                    <img
+                        src="../images/photos/gallery/gallery-14.jpg"
+                        alt="Photo"
+                        loading="lazy"
+                    >
+                </figure>
+                
+                <figure
+                    class="gallery-item"
+                    data-tags="colour"
+                >
+                    <img
+                        src="../images/photos/gallery/gallery-15.jpg"
+                        alt="Photo"
+                        loading="lazy"
+                    >
+                </figure>
+                
+                <figure
+                    class="gallery-item"
+                    data-tags="colour"
+                >
+                    <img
+                        src="../images/photos/gallery/gallery-16.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -273,7 +363,18 @@
                     data-tags="film black-and-white"
                 >
                     <img
-                        src="images/photos/gallery/gallery-18.jpg"
+                        src="../images/photos/gallery/gallery-17.jpg"
+                        alt="Photo"
+                        loading="lazy"
+                    >
+                </figure>
+                
+                <figure
+                    class="gallery-item"
+                    data-tags="film black-and-white"
+                >
+                    <img
+                        src="../images/photos/gallery/gallery-18.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -284,7 +385,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-19.jpg"
+                        src="../images/photos/gallery/gallery-19.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -295,7 +396,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-20.jpg"
+                        src="../images/photos/gallery/gallery-20.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -306,7 +407,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-21.jpg"
+                        src="../images/photos/gallery/gallery-21.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -317,7 +418,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-22.jpg"
+                        src="../images/photos/gallery/gallery-22.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -329,7 +430,7 @@
                     data-tags="film black-and-white"
                 >
                     <img
-                        src="images/photos/gallery/gallery-23.jpg"
+                        src="../images/photos/gallery/gallery-23.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -341,7 +442,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-24.jpg"
+                        src="../images/photos/gallery/gallery-24.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -353,7 +454,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-25.jpg"
+                        src="../images/photos/gallery/gallery-25.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -365,7 +466,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-26.jpg"
+                        src="../images/photos/gallery/gallery-26.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -377,7 +478,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-27.jpg"
+                        src="../images/photos/gallery/gallery-27.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -389,7 +490,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-28.jpg"
+                        src="../images/photos/gallery/gallery-28.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -401,7 +502,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-29.jpg"
+                        src="../images/photos/gallery/gallery-29.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -413,7 +514,7 @@
                     data-tags="colour"
                 >
                     <img
-                        src="images/photos/gallery/gallery-30.jpg"
+                        src="../images/photos/gallery/gallery-30.jpg"
                         alt="Photo"
                         loading="lazy"
                     >
@@ -462,8 +563,8 @@
             ›
         </button>
     </div>
-    <script src="js/gallery.js"></script>
-    <script src="js/nav.js"></script>
+<script src="../js/gallery.js"></script>
+<script src="../js/nav.js"></script>
 
 </body>
 
